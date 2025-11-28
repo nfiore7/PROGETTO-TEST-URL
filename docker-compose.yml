@@ -1,0 +1,7 @@
+services:
+  phishing-analyzer:
+    build: .
+    container_name: phishing-analyzer
+    ports:
+      - "8001:8001"
+    restart: unless-stopped 
